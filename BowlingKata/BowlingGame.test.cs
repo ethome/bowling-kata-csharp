@@ -5,13 +5,13 @@ namespace BowlingKata
     public class BowlingGameTest
     {
         [Fact]
-        public void score_shouldReturnRolledAmount()
+        public void Score_OneRoll_ShouldReturnRolledAmount()
         {
             BowlingGame game = new BowlingGame();
 
-            game.roll(3);
+            game.Roll(3);
 
-            Assert.Equal(3, game.score());
+            Assert.Equal(3, game.Score());
         }
     }
 }
